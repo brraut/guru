@@ -29,7 +29,7 @@ body {
   background: #0a5b86;
   position: -webkit-sticky;
   position: sticky;
-  top: 0px;
+  top: -1px;
   z-index: 9;
   -webkit-box-shadow: 0px 5px 10px #0606065c;
           box-shadow: 0px 5px 10px #0606065c;
@@ -241,6 +241,8 @@ body {
 
 .need-repair {
   background: #0a5b86;
+  position: relative;
+  margin: 30px auto;
 }
 
 .need-repair img {
@@ -268,16 +270,45 @@ body {
   color: white;
 }
 
-.need-repair .need-repair-wrapper .submit-btn {
-  margin-top: 30px;
+.need-repair .mobile {
+  position: absolute;
+  top: -15%;
+  bottom: 0;
+  text-align: center;
 }
 
-.need-repair .need-repair-wrapper .submit-btn button {
+.need-repair .mobile img {
+  height: 120%;
+}
+
+.need-repair .mobile .inquery-form {
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  width: 80%;
+  left: 10%;
+  text-align: left;
+}
+
+.need-repair .mobile .inquery-form .form-group {
+  margin-bottom: 5px;
+}
+
+.need-repair .mobile .inquery-form .form-control {
+  height: 35px;
+}
+
+.need-repair .mobile .inquery-form .submit-btn {
+  text-align: center;
+}
+
+.need-repair .mobile .inquery-form .submit-btn button {
   border: none;
-  background: #fdfdfd;
-  padding: 8px 15px;
-  color: #0a5b86;
-  margin-top: 15px;
+  background: #0a5b86;
+  padding: 5px 15px;
+  color: #fefefe;
+  font-size: 14px;
+  margin-top: 30px;
   font-weight: bold;
   border-radius: 5px;
 }
